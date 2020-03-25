@@ -1,0 +1,36 @@
+name:                Anomy
+version:             1.0
+stability:           stable
+synopsis:            PvPGN Warcraft III Chat Client
+description:         Chat client which emulates the Warcraft III game client on PvPGN servers.
+category:            Chat
+license:             GPL
+license-file:        LICENSE
+author:              Justin Chan
+maintainer:          justcme@gmail.com
+build-type:          Simple
+cabal-version:       >=1.2
+
+executable           anomy
+  main-is:           Anomy.hs
+  ghc-options:       -main-is Anomy -threaded -optl-mwindows -O -funbox-strict-fields -Wall -fno-warn-orphans
+  hs-source-dirs:    src
+  build-depends:
+    ghc >= 6.10.3,
+    base >= 4.1.0.0,
+    network >= 2.2.1,
+    process >= 1.0.1.1,
+    extensible-exceptions >= 0.1.1.0,
+    old-time >= 1.0.0.2,
+    old-locale >= 1.0.0.1,
+    mtl >= 1.1.0.2,
+    stm >= 2.1.1.2,
+    containers >= 0.2.0.1,
+    filepath >= 1.1.0.2,
+    directory >= 1.0.0.3,
+    parsec >= 2.1.0.1,
+    regex-compat >= 0.93.1,
+    regex-posix >= 0.94.4,
+    glib >= 0.12.0,
+    gtk >= 0.12.0,
+    Win32 >= 2.2.0.1

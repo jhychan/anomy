@@ -1,0 +1,13 @@
+prefix=/devel/target/01a1730a0a0698deb25f9d0e2cea0cf9
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=0
+
+Name: libXML
+Version: 2.9.0
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:   -L/devel/dist/win32/zlib-1.2.5-2/lib -lz   -lws2_32 
+Cflags: -I${includedir}/libxml2 
